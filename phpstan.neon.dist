@@ -1,0 +1,9 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    phpVersion: 80100
+    paths:
+        - inc
+        - src
+    level: max

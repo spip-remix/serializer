@@ -1,0 +1,42 @@
+{
+    "name": "spip-remix/serializer",
+    "description": "Encodage/Décodage",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "JamesRezo",
+            "email": "james@rezo.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "spip-remix/contracts": "^0.1.x-dev",
+        "spip/filesystem": "^1.2.x-dev"
+    },
+    "require-dev": {
+        "spip-remix/sdk": "0.1.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpipRemix\\Component\\Serializer\\": "src/"
+        },
+        "files": ["inc/serializer.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SpipRemix\\Component\\Serializer\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.27"
+        }
+    },
+    "repositories": {
+        "spip": {
+            "type": "composer",
+            "url": "https://get.spip.net/composer/"
+        }
+    }
+}
