@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace SpipRemix\Component\Serializer;
 
 use Spip\Component\Filesystem\FilesystemInterface;
-use SpipRemix\Contracts\EncoderInterface;
 use SpipRemix\Component\Serializer\Exception\EncoderException;
+use SpipRemix\Component\Serializer\FreshInterface;
+use SpipRemix\Contracts\EncoderInterface;
 
 /**
  * Gestion du fichier de cache sécurisé des métas.

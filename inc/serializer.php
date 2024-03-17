@@ -17,15 +17,10 @@ declare(strict_types=1);
  *
  * @uses ecrire_fichier()
  *
- * @param string $fichier
- *     Chemin du fichier
- * @param string $contenu
- *     Contenu à écrire
- * @param bool $ecrire_quand_meme
- *     - true pour ne pas raler en cas d'erreur
- *     - false affichera un message si on est webmestre
- * @param bool $truncate
- *     Écriture avec troncation ?
+ * @param string $fichier Chemin du fichier
+ * @param string $contenu Contenu à écrire
+ * @param bool $ecrire_quand_meme true pour ne pas raler en cas d'erreur sinon affichera un message si on est webmestre
+ * @param bool $truncate Écriture avec troncation ?
  */
 function ecrire_fichier_securise($fichier, $contenu, $ecrire_quand_meme = false, $truncate = true) {
 	if (!str_ends_with($fichier, '.php')) {
